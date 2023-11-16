@@ -1,0 +1,27 @@
+sistema bancario
+
+3 clases 
+	persona
+	banco
+	cuentaBancaria
+
+persona: nombre,apellido,edad,dni,numeroCuenta
+metodo:-constructor->(nombre,apellido,edad,dni,numeroCuenta)
+
+banco: nombreBanco,dirección,listaCuentaBancaria(array) 
+Metodos: -constructor->(nombre,direccion)
+	 -agregarCuenta->(cuenta)(lista)
+	 -buscarCuentaTitular->(nombre,apellido) return(cuentaBancariaAsociadaPersona)
+
+cuentaBancaria: numeroCuenta,titular(instancia clas persona),saldo
+Metodos: -cnstructor->(inicializarNroCuenta,titular,saldo)
+	 -depocitar(cantidad)
+	 -retirar(cantidad) //si y solo si tiene saldo 
+	 
+Ejercicios 
+1. Crear al menos dos instancias  de la clase persona y dos instancias de la clase cuenta bancaria
+2. Crear una instancia de la clase banco y agregar las cuentas bancarias a la lista del banco
+3. Realizar las siguientes operaciones
+	a.depocita diferentes cantidades en las cuentas banacarias
+	b.Realiza retiros de diferentes montos de las cuentas bancarias revisando si se puede
+	c.busca una cuenta bancaria por el titular utilizando el metodo buscarcuenta por el titular
